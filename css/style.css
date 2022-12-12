@@ -64,3 +64,43 @@ body {
   padding: 10px 20px;
   margin-right: 10px;
 }
+
+
+.box-content {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showColor {
+  padding: 15px 30px;
+  background-color: #222;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+#colorText {
+  color: rgb(88, 194, 255);
+}
+
+#btnColorRandom {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #222;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+#btnColorRandom:hover {
+  background-color: #222;
+  color: #fff;
+}
