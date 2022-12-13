@@ -58,3 +58,9 @@ const colorRgbRandom = () => {
 
     return color;
 };
+
+const colorSimpleTextRandom = () => {
+    let color = `${colorsText[numberRandom('simple text')]}`;
+
+    return color;
+};
