@@ -50,3 +50,11 @@ const colorHexadecimalRandom = () => {
 
     return color;
 };
+
+const colorRgbRandom = () => {
+    let color = `rgb(${numberRandom('rgb')}, ${numberRandom(
+        'rgb'
+    )}, ${numberRandom('rgb')})`;
+
+    return color;
+};
