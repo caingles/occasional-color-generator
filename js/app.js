@@ -40,3 +40,13 @@ const numberRandom = (typeNumber) => {
         return number;
     }
 };
+
+const colorHexadecimalRandom = () => {
+    let color = `#${numberRandom('hexadecimal')}${numberRandom(
+        'hexadecimal'
+    )}${numberRandom('hexadecimal')}${numberRandom('hexadecimal')}${numberRandom(
+        'hexadecimal'
+    )}${numberRandom('hexadecimal')}`;
+
+    return color;
+};
