@@ -25,3 +25,18 @@ const colorsText = [
   ];
   
   let number;
+
+const numberRandom = (typeNumber) => {
+    if (typeNumber === 'hexadecimal') {
+        number = Math.floor(Math.random() * 17);
+        return number.toString(16);
+    }
+    if (typeNumber === 'rgb') {
+        number = Math.floor(Math.random() * 256);
+        return number;
+    }
+    if (typeNumber === 'simple text') {
+        number = Math.floor(Math.random() * colorsText.length);
+        return number;
+    }
+};
