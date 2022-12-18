@@ -76,3 +76,25 @@ btnColorHexa.addEventListener("click", () => {
 btnColorRgb.addEventListener("click", () => {
   conmutador = "btnColorRgb";
 });
+
+btnColorRandom.addEventListener('click', () => {
+    let colors = '';
+    if (conmutador === 'btnColorSimple') {
+      colors = colorSimpleTextRandom();
+      document.body.style.background = `${colors}`;
+      colorText.textContent = colors.toUpperCase();
+    }
+  
+    if (conmutador === 'btnColorHexa') {
+      colors = colorHexadecimalRandom();
+      document.body.style.background = `${colors}`;
+      colorText.textContent = colors.toUpperCase();
+    }
+  
+    if (conmutador === 'btnColorRgb') {
+      colors = colorRgbRandom();
+      document.body.style.background = `${colorRgbRandom()}`;
+      colorText.textContent = colors.toUpperCase();
+    }
+  });
+  
