@@ -64,3 +64,15 @@ const colorSimpleTextRandom = () => {
 
     return color;
 };
+
+btnColorSimple.addEventListener("click", () => {
+  conmutador = "btnColorSimple";
+});
+
+btnColorHexa.addEventListener("click", () => {
+  conmutador = "btnColorHexa";
+});
+
+btnColorRgb.addEventListener("click", () => {
+  conmutador = "btnColorRgb";
+});
